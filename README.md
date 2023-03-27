@@ -16,10 +16,18 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Screenshot
 
+#### Desktop View:
+
+<img src='src/images/desktop.png' width='500'>
+
+#### Mobile View:
+
+<img src='src/images/mobile.png' width='300'>
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Demo](https://jerryren527.github.io/four-card-feature-section/)
+- Figma File: [Personal Figma File](https://www.figma.com/file/qqBRXKEd6pxTGDV2q0DFty/four-card-feature-section?t=uGAGN7NLJdSpYeEP-0)
 
 ## My process
 
