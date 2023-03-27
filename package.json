@@ -1,0 +1,15 @@
+{
+  "name": "four-card-feature-section-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^8.0.1",
+    "vite": "^4.1.0"
+  }
+}

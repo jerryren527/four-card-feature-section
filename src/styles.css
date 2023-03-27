@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 0.938rem;
+  background-color: var(--Very-Light-Gray);
+  padding-bottom: 5rem;
+}
+
+/* ============== title ============== */
+.title {
+  margin: 70px 30px 60px;
+  width: 296px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Reliable, efficient delivery */
+.title div:nth-child(1) {
+  font-size: 1.469rem;
+}
+
+/* Powered by Technology */
+.title div:nth-child(2) {
+  font-size: 1.516rem;
+  margin-bottom: 1.063rem;
+}
+
+/* Our Artificial Intelligence powered... */
+.title p:nth-child(3) {
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============== cards container ============== */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  row-gap: 1.563rem;
+}
+
+/* ============== card ============== */
+.card {
+  text-align: left;
+  padding: 1.625rem 1.688rem;
+  background: #fafafa;
+  border-radius: 0.313rem;
+  filter: drop-shadow(0.313rem 0.625rem 1.25rem rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.234rem;
+}
+
+.card-subtitle {
+  font-weight: 200;
+  margin-bottom: 2rem;
+  letter-spacing: -0.045em;
+  line-height: 1.875rem;
+  line-height: 1.375rem;
+  color: var(--Grayish-Blue);
+}
+
+.card img {
+  position: relative;
+  left: 75%;
+}
+
+/* ============== styling classes ============== */
+
+.bold {
+  font-weight: 600;
+}
+
+.supervisor {
+  border-top: 0.313rem solid var(--Cyan);
+}
+.team-builder {
+  border-top: 0.313rem solid var(--Red);
+}
+.karma {
+  border-top: 0.313rem solid var(--Orange);
+}
+.calculator {
+  border-top: 0.313rem solid var(--Blue);
+}
+
+/* ============== responsive design ============== */
+
+@media (width <= 320px) {
+  .cards-container {
+    width: 256px;
+  }
+  .card {
+    text-align: center;
+  }
+  .card img {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+@media (320px < width < 1000px) {
+  .card {
+    max-width: 311px;
+  }
+  .cards-container {
+    align-items: center;
+  }
+
+  .card img {
+    width: 20%;
+    max-width: 150px;
+  }
+}
+
+@media (width >= 1000px) {
+  .title {
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 184px;
+    padding-right: 184px;
+  }
+  .card {
+    max-width: 311px;
+    margin-right: 25px;
+  }
+}
+
+@media (width >= 1440px) {
+  .supervisor,
+  .karma {
+    transform: translateY(50%);
+  }
+}
